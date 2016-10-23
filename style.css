@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(0,0,0);;
+    
+}
+
+
+.pedal {
+    
+    width: 25%;
+    height: 50%;
+    position: absolute;
+
+    left: 37.5%;
+
+  
+    transform-origin: bottom;
+    
+}
+
+#flower1{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 300px;
+    height: 300px;
+}
+
+#flower2{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 300px;
+    height: 300px;
+    z-index: -2;
+}
+
+#core {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 30px;
+}
