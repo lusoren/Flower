@@ -25,7 +25,7 @@
         <img id="ped11" class="pedal" src="img/Pedal.png" data-0="transform:rotate(0deg);" data-10000="transform:rotate(300deg);">
         <img id="ped12" class="pedal" src="img/CutPedal-02.png" data-0="transform:rotate(0deg);" data-10000="transform:rotate(330deg);">
         <img id="ped13" class="pedal" src="img/Pedal.png" data-0="transform:rotate(0deg);z-index:0;"
-            data-10000="transform:rotate(330deg);z-index:-1; ">
+        data-10000="transform:rotate(330deg);z-index:-1; ">
         
     </div>
     
@@ -40,6 +40,10 @@
             render: function(data) {
             //Debugging - Log the current scroll position.
             console.log(data.curTop);
+            
+            if(data.curTop >= data.maxTop) {
+				this.setScrollTop(0, true);
+			}
         }
     });
         
