@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" ></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="script.js"></script>
     <Link rel="stylesheet" href="style.css" />
     
 </head>
@@ -36,18 +37,17 @@
     <script src="src/skrollr.js""></script>
 
     <script type="text/javascript">
-        var s = skrollr.init({
-            render: function(data) {
-            //Debugging - Log the current scroll position.
-            console.log(data.curTop);
-            
-            if(data.curTop >= data.maxTop) {
+	skrollr.init({
+
+		render: function(data) {
+			//Loop
+			if(data.curTop >= data.maxTop) {
 				this.setScrollTop(0, true);
+				
 			}
-        }
-    });
-        
-    </script>
+		}
+	});
+	</script>
     
 </body>
 </html>
